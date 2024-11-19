@@ -1,0 +1,254 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Responsive Header</title>
+  <link    rel="stylesheet"  href="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/4.1.3/css/bootstrap.min.css" />
+  <link rel="stylesheet"   href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css" />
+  <link rel="stylesheet" href="service.css">   
+  
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css" />
+
+  <style>
+    </style>
+</head>
+<body>
+  <div class="header-dark">
+    <nav class="navbar navbar-expand-md">
+      <div class="container">
+        <a class="navbar-brand" href="#"> Company Name </a>
+        <button
+          class="navbar-toggler"
+          type="button"
+          data-toggle="collapse"
+          data-target="#navbarNav"
+          aria-controls="navbarNav"
+          aria-expanded="false"
+          aria-label="Toggle navigation"
+        >
+          <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarNav">
+          <ul class="navbar-nav mx-auto">
+            <li class="nav-item">
+              <a class="nav-link" href="#">Home</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="#">Services</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="#">Contact</a>
+            </li>
+          </ul>
+          <form class="form-inline">
+            <input
+              class="form-control"
+              type="search"
+              placeholder="Search"
+              aria-label="Search"
+            />
+          </form>
+          <a href="#" class="buy-button" style="padding: 20px; width: 25%; margin-top: 15px; font-size: large; margin-left: 75px;">Login</a>
+        </div>
+      </div>
+    </nav>
+  </div>
+<br><br><br><br>
+<!-- Now Body -->
+<section class="Service-photo">
+  <div class="">
+    <p style="text-align: center;color: black;"><b>Service</b> </p>
+  </div>
+  <div class="left-30%-photo">
+
+  </div>
+  <b> In Middle arrow mark for converts from left to right </b>
+  <div class="right-30/40%-photo">
+
+  </div>
+</section>
+
+<section  class="Service-photo-info">
+  <div class="1st">
+    <p>Three points</p>
+  </div>
+  <div class="2st">
+    <p>Three points</p>
+  </div>
+  <div class="3st">
+    <p>Three points</p>
+  </div>
+</section>
+
+<section class="Our manufactured products">
+  <p>Backpacks</p>
+  <p>Mats</p>
+  <p>bottles</p>
+  <p>purse</p>
+  <p>containers</p>
+</section>
+
+
+<br><br>
+<br><br>
+<br><br>
+  </section>
+<section class="footer" style="  background: linear-gradient(to right, rgba(0, 128, 0, 0.5), rgba(0, 255, 0, 0.8), rgba(0, 128, 0, 0.5));
+; position: relative;width: 100%; margin-bottom: 10px; color: white;">
+    <div class="footer-row">
+      <div class="footer-col">
+        <h4>Info</h4>
+        <ul class="links">
+          <li><a>Location: 123, Broklyn Street, New York</a></li>
+          <li><a>+99 268 827 2500</a>  </li>
+          <li><a>E-mail: info@ecofix.com</a> </li>
+          <li><a>Hour: 08.00 AM-09.00 PM</a></li>
+         
+        </ul>
+      </div>
+
+      <div class="footer-col">
+        <h4>Explore</h4>
+        <ul class="links">
+          <li><a href="#">Free Designs</a></li>
+          <li><a href="#">Latest Designs</a></li>
+          <li><a href="#">Themes</a></li>
+          <li><a href="#">Popular Designs</a></li>
+          <li><a href="#">Art Skills</a></li>
+          <li><a href="#">New Uploads</a></li>
+        </ul>
+      </div>
+
+      <div class="footer-col">
+        <h4>Legal</h4>
+        <ul class="links">
+          <li><a href="#">Customer Agreement</a></li>
+          <li><a href="#">Privacy Policy</a></li>
+          <li><a href="#">GDPR</a></li>
+          <li><a href="#">Security</a></li>
+          <li><a href="#">Testimonials</a></li>
+          <li><a href="#">Media Kit</a></li>
+        </ul>
+      </div>
+
+      <div class="footer-col">
+        <h4>Newsletter</h4>
+        <p>
+          Subscribe to our newsletter for a weekly dose
+          of news, updates, helpful tips, and
+          exclusive offers.
+        </p>
+        <form action="#">
+          <input type="text" placeholder="Your email" required>
+          <button type="submit">SUBSCRIBE</button>
+        </form>
+        <div class="icons">
+          <i class="fa-brands fa-facebook-f"></i>
+          <i class="fa-brands fa-twitter"></i>
+          <i class="fa-brands fa-linkedin"></i>
+          <i class="fa-brands fa-github"></i>
+        </div>
+      </div>
+    </div>
+  </section>
+
+
+
+
+
+
+  
+  
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/4.1.3/js/bootstrap.bundle.min.js"></script>
+  <script>
+    // Scroll event listener to trigger stats animation when visible
+    window.addEventListener('scroll', function() {
+      const statsSection = document.getElementById('impact');
+      const stats = document.querySelectorAll('.stat-item h3');
+      
+      const sectionPosition = statsSection.getBoundingClientRect().top;
+      const windowHeight = window.innerHeight;
+      
+      if (sectionPosition < windowHeight) {
+        stats.forEach(stat => {
+          stat.classList.add('animate');
+        });
+      }
+    });
+// our impact 
+const statItems = document.querySelectorAll(".stat-item");
+
+      const observerOptions = {
+        root: null, // Observe viewport
+        threshold: 0.2, // Trigger when 20% of the element is visible
+      };
+
+      const observerCallback = (entries, observer) => {
+        entries.forEach((entry) => {
+          if (entry.isIntersecting) {
+            entry.target.classList.add("visible"); // Add the animation class
+            observer.unobserve(entry.target); // Stop observing after animation triggers
+          }
+        });
+      };
+
+      const observer = new IntersectionObserver(observerCallback, observerOptions);
+
+      statItems.forEach((item) => {
+        observer.observe(item);
+      });
+
+
+// How Process js works 
+
+function showContent(step) {
+    const contentTitle = document.getElementById('contentTitle');
+    const contentText = document.getElementById('contentText');
+
+    switch(step) {
+        case 1:
+            contentTitle.innerText = "Requirement Gathering";
+            contentText.innerText = "In this phase, the requirements of the project are gathered from all stakeholders.";
+            break;
+        case 2:
+            contentTitle.innerText = "Design";
+            contentText.innerText = "Design phase includes wireframing and designing the structure of the project.";
+            break;
+        case 3:
+            contentTitle.innerText = "Develop";
+            contentText.innerText = "The development phase where coding and implementation of features occur.";
+            break;
+        case 4:
+            contentTitle.innerText = "Test";
+            contentText.innerText = "In the testing phase, the product undergoes various tests to ensure it works as expected.";
+            break;
+        case 5:
+            contentTitle.innerText = "Deployment";
+            contentText.innerText = "Deployment involves releasing the final product to the live environment.";
+            break;
+        case 6:
+            contentTitle.innerText = "Maintenance";
+            contentText.innerText = "Maintenance includes updates and fixes to ensure the project remains operational and bug-free.";
+            break;
+        default:
+            contentTitle.innerText = "Click a step to see the details";
+            contentText.innerText = "Please click on one of the steps on the left to view more information about it.";
+            break;
+    }
+}
+
+// Request form 
+
+
+
+
+
+
+  </script>
+</body>
+</html>
+    <!-- Fonts Links For Icon -->
+   
+   

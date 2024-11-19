@@ -47,22 +47,18 @@ const statItems = document.querySelectorAll(".stat-item");
       contentText.textContent = "Details about the collection of wastage.";
       processImage.src = "Service1.jpg"; // Add the correct image path
       processImage.style.display = "block"; // Make image visible
-    } else if (stepNumber === 2) {
-      contentTitle.textContent = "Pickup Waste";
-      contentText.textContent = "Details about the waste pickup processetails about the waste pickup processetails about the waste pickup processetails about the waste pickup processetails about the waste pickup processetails about the waste pickup processetails about the waste pickup process.";
-      processImage.src = "hello1.jpg"; // Add the correct image path
-      processImage.style.display = "block"; // Make image visible
-    } else if (stepNumber === 3) {
-      contentTitle.textContent = "Reduce Garbage";
-      contentText.textContent = "Details about how to reduce garbage.";
-      processImage.src = "path_to_reduce_image.jpg"; // Add the correct image path
-      processImage.style.display = "block"; // Make image visible
-    } else if (stepNumber === 4) {
+    }
+    else if (stepNumber === 2) {
       contentTitle.textContent = "Recycling Process";
       contentText.textContent = "Details about the recycling process.";
       processImage.src = "path_to_recycling_image.jpg"; // Add the correct image path
       processImage.style.display = "block"; // Make image visible
-    }
+    } else if (stepNumber === 3) {
+      contentTitle.textContent = "Recycled Product";
+      contentText.textContent = "Details about the Recycled Product processetails about the waste pickup processetails about the waste pickup processetails about the waste pickup processetails about the waste pickup processetails about the waste pickup processetails about the waste pickup process.";
+      processImage.src = "hello1.jpg"; // Add the correct image path
+      processImage.style.display = "block"; // Make image visible
+    } 
   }
 
 

@@ -1,0 +1,100 @@
+<!DOCTYPE html>
+<!-- Coding By CodingNepal - www.codingnepalweb.com -->
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Card Slider HTML and CSS | CodingNepal</title>
+  <!-- Linking SwiperJS CSS -->
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css">
+  <link rel=" stylesheet" href="founders.css">
+</head>
+<body>
+  <section class="founder-con">
+  <div class="container swiper">
+    <div class="slider-wrapper">
+      <div class="card-list swiper-wrapper">
+        <div class="card-item swiper-slide">
+          <img src="name4.jpg" alt="User Image" class="user-image">
+          <h2 class="user-name">Harshitha</h2>
+          <p class="user-profession">Software Developer</p>
+        </div>
+
+        <div class="card-item swiper-slide">
+          <img src="name6.jpg" alt="User Image" class="user-image">
+          <h2 class="user-name">Manikanta</h2>
+          <p class="user-profession">Product Designer</p>
+        </div>
+
+        <div class="card-item swiper-slide">
+          <img src="name5.jpg" alt="User Image" class="user-image">
+          <h2 class="user-name">Vishaksha</h2>
+          <p class="user-profession">Graphic Designer</p>
+        </div>
+
+        <div class="card-item swiper-slide">
+          <img src="name1.jpg" alt="User Image" class="user-image">
+          <h2 class="user-name">Soumyadip/h2>
+          <p class="user-profession">Project Manager</p>
+        </div>
+
+        <div class="card-item swiper-slide">
+          <img src="name2.jpg" alt="User Image" class="user-image">
+          <h2 class="user-name">Angshuk</h2>
+          <p class="user-profession">Marketing SpecialistPlease click on one of the steps on the left to view more information about itPlease click on one of the steps on the left to view more information about it</p>
+        </div>
+
+        <div class="card-item swiper-slide">
+          <img src="name3.jpg" alt="User Image" class="user-image">
+          <h2 class="user-name">Ajesh</h2>
+          <p class="user-profession">Data Scientist</p>
+        </div>
+
+       
+      </div>
+
+      <div class="swiper-pagination"></div>
+      <div class="swiper-slide-button swiper-button-prev"></div>
+      <div class="swiper-slide-button swiper-button-next"></div>
+    </div>
+  </div>
+</section>
+  <!-- Linking SwiperJS script -->
+  <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
+
+  <!-- Linking custom script -->
+  <script>
+    const swiper = new Swiper('.slider-wrapper', {
+  loop: true,
+  grabCursor: true,
+  spaceBetween: 30,
+
+  // Pagination bullets
+  pagination: {
+    el: '.swiper-pagination',
+    clickable: true,
+    dynamicBullets: true
+  },
+
+  // Navigation arrows
+  navigation: {
+    nextEl: '.swiper-button-next',
+    prevEl: '.swiper-button-prev',
+  },
+
+  // Responsive breakpoints
+  breakpoints: {
+    0: {
+      slidesPerView: 1
+    },
+    768: {
+      slidesPerView: 2
+    },
+    1024: {
+      slidesPerView: 3
+    }
+  }
+});
+  </script>
+</body>
+</html>
