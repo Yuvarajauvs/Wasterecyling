@@ -1,364 +1,59 @@
+ body {
+            font-family: Arial, sans-serif;
+            background-color: #f4f4f4;
+            margin: 0;
+            padding: 0;
+        }
 
-.header-dark {
-    position: fixed;
-    top: 0;
-    left: 0;
-    width: 100%;
-    background: rgba(255, 255, 255, 0.2); /* Semi-transparent background */
-    backdrop-filter: blur(10px); /* Adds blur to the background */
-    -webkit-backdrop-filter: blur(10px); /* For Safari */
-    z-index: 999;
-    border-bottom: 1px solid rgba(255, 255, 255, 0.3); /* Optional: Adds a subtle border for separation */
-  }
-  
-  /* Rest of the existing styles remain the same */
-  
-  .header-dark .navbar {
-    padding: 0;
-  }
-  
-  .header-dark .navbar-brand {
-    font-weight: bold;
-    color: black;
-    margin-left: -150px;
-  }
-  
-  .header-dark .navbar-brand:hover {
-    color: #208f8f;
-  }
-  
-  .header-dark .navbar-nav {
-    flex-direction: row;
-    justify-content: center;
-    width: 100%;
-  }
-  
-  .header-dark .nav-item {
-    margin: 0 25px;
-  }
-  
-  .header-dark .nav-link {
-    color: black;
-    font-size: 16px;
-  }
-  
-  .header-dark .nav-link:hover {
-    color: #208f8f;
-  }
-  
-  .header-dark .form-inline {
-    margin-right: 250px;
-  }
-  
-  .header-dark .form-inline .form-control {
-    border-radius: 20px;
-    border: 1px solid #ccc;
-  }
-  
-  .header-dark .buy-button {
-    background-color: green;
-    color: white;
-    border-radius: 20px;
-    padding: 10px 20px;
-    text-decoration: none;
-    font-size: 14px;
-    margin-left: auto;
-  }
-  
-  .header-dark .buy-button:hover {
-    background-color: darkgreen;
-  }
-  
-  @media (max-width: 768px) {
-    .header-dark .navbar-nav {
-        flex-direction: column;
-        text-align: center;
-    }
-  
-    .header-dark .form-inline {
-        margin: 10px 0;
-    }
-  
-    .header-dark .buy-button {
-        margin: 10px auto;
-    }
-  }
-  
-  
-  ************************************************************************************
-   
-  
-  
-  
-  .footer {
-    position: absolute;
-    top: 50%;
-    left: 50%;
-    transform: translate(-50%, -50%);
-    max-width: 100%;
-    width: 95%;
-    background: #063703;
-    border-radius: 6px;
-  }
-  
-  .footer .footer-row {
-    display: flex;
-    flex-wrap: wrap;
-    justify-content: space-between;
-    gap: 3.5rem;
-    padding: 60px;
-  }
-  
-  .footer-row .footer-col h4 {
-    color: #fff;
-    font-size: 1.2rem;
-    font-weight: 400;
-  }
-  
-  .footer-col .links {
-    margin-top: 20px;
-  }
-  
-  .footer-col .links li {
-    list-style: none;
-    margin-bottom: 10px;
-  }
-  
-  .footer-col .links li a {
-    text-decoration: none;
-    color: #fff;
-  }
-  
-  .footer-col .links li a:hover {
-    color: #fff;
-  }
-  
-  .footer-col p {
-    margin: 20px 0;
-    color: #bfbfbf;
-    max-width: 300px;
-  }
-  
-  .footer-col form {
-    display: flex;
-    gap: 5px;
-  }
-  
-  .footer-col input {
-    height: 40px;
-    border-radius: 6px;
-    background: none;
-    width: 100%;
-    outline: none;
-    border: 1px solid #7489C6 ;
-    caret-color: #fff;
-    color: #fff;
-    padding-left: 10px;
-  }
-  
-  .footer-col input::placeholder {
-    color: #ccc;
-  }
-  
-   .footer-col form button {
-    background: #fff;
-    outline: none;
-    border: none;
-    padding: 10px 15px;
-    border-radius: 6px;
-    cursor: pointer;
-    font-weight: 500;
-    transition: 0.2s ease;
-  }
-  
-  .footer-col form button:hover {
-    background: #cecccc;
-  }
-  
-  .footer-col .icons {
-    display: flex;
-    margin-top: 30px;
-    gap: 30px;
-    cursor: pointer;
-  }
-  
-  .footer-col .icons i {
-    color: #afb6c7;
-  }
-  
-  .footer-col .icons i:hover  {
-    color: #fff;
-  }
-  
-  @media (max-width: 768px) {
-    .footer {
-      position: relative;
-      bottom: 0;
-      left: 0;
-      transform: none;
-      width: 100%;
-      border-radius: 0;
-    }
-  
-    .footer .footer-row {
-      padding: 20px;
-      gap: 1rem;
-    }
-  
-    .footer-col form {
-      display: block;
-    }
-  
-    .footer-col form :where(input, button) {
-      width: 100%;
-    }
-  
-    .footer-col form button {
-      margin: 10px 0 0 0;
-    }
-  }
-  
-  
-  
-  
-  
-  
-  ***************************************************************
-  
-  
-  
-  
-  
-  
-  
-  
-  
-  
-  
-  
-      .b1-container {
-          display: grid;
-          margin-left: 250px;
-          align-items: center; 
-          grid-template-columns: 1fr 1fr 1fr;
-          column-gap: 5px;
-         }
-         
-         img {
-           max-width: 100%;
-           border-radius: 5px 5px 5px;
-           max-height:100%;
-         }
-         img:hover{
-           background-color: aliceblue;
-         }
-         
-         .b1-text {
-           font-size: 15px;
-           max-width:100%;
-           color: green;
-           background-color: rgb(149, 206, 149);
-           border-radius: 9px 9px 9px;
-         
-         }
-         
-         .b1-text1{
-           font-size: 15px;
-           color: rgb(106, 131, 106);
-           border-radius: 9px 9px 9px;
-           margin-left: -350px;
-           margin-top: 350px;
-         
-         }
-  
-  
-         
-  ******************************************************************************************** 
-  
-  .services-section {
-    background-color: #074107; /* Heavy green light background */
-    padding: 40px 20px;
-    text-align: center;
-  }
-  
-  .services-section h2 {
-    color: green;
-    margin-bottom: 20px;
-  }
-  services-section:hover{
-      background-color: #074107;
-  }
-  
-  .cards-container {
-  display: flex;
-  justify-content: center;
-  gap: 90px; /* Increased gap between cards */
-  flex-wrap: wrap;
-  }
-  
-  
-  .card {
-    background-color: white;
-    border-radius: 8px;
-    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
-    width: auto;
-    height: auto;
-    overflow: hidden;
-    text-align: center;
-    display: flex;
-    flex-direction: column;
-  }
-  
-  .card img {
-    width: 100%;
-    height: 180px;
-    object-fit: cover;
-    transition: transform 0.6s ease-in-out; /* Smooth transition for zoom */
-  }
-  
-  /* Zoom effect on hover */
-  .card img:hover {
-    transform: scale(1.1); /* Zoom in slightly */
-  }
-  
-  .card-body {
-    padding: 20px;
-  }
-  
-  .card-title {
-    color: green;
-    font-size: 1.5rem;
-    margin-bottom: 10px;
-  }
-  
-  .card-body hr {
-    margin: 10px 0;
-    border: 0;
-    height: 1px;
-    background-color: #ccc;
-  }
-  
-  .card-text {
-    color: #555;
-    font-size: 1rem;
-  }
-  
-  .card-footer {
-    padding: 15px;
-    background-color: #f9f9f9;
-  }
-  
-  .read-more {
-    color: green;
-    text-decoration: none;
-    font-weight: bold;
-    transition: color 0.3s;
-  }
-  
-  .read-more:hover {
-    color: darkgreen;
-  }
-  
-  
-  /********************************************************************************************
-  
+        .Service-photo {
+            text-align: center;
+            padding: 50px 0;
+            position: relative;
+        }
+
+        .title {
+            color: black;
+            font-size: 45px;
+            margin-bottom: 20px;
+        }
+
+        .image-container {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            position: relative;
+        }
+
+        .left-photo, .right-photo {
+            width: 30%;
+            margin: 0 20px;
+            opacity: 0; /* Initially hidden */
+            transition: opacity 1s ease-in-out;
+        }
+
+        .arrow {
+            position: relative;
+            width: 50px;
+            height: 5px;
+            background-color: #007BFF; /* Arrow color */
+            margin: 0 10px;
+            opacity: 0; /* Initially hidden */
+            transition: opacity 1s ease-in-out;
+        }
+
+        .arrow:after {
+            content: '';
+            position: absolute;
+            top: -6.5px; /* Adjust to position the arrowhead */
+            left: 100%;
+            width: 0;
+            height: 0;
+            border-top: 10px solid transparent;
+            border-bottom: 10px solid transparent;
+            border-left: 10px solid #007BFF; /* Arrowhead color */
+        }
+
+        /* Optional: Add some hover effect to the arrow */
+        .arrow:hover {
+            background-color: #0056b3; /* Darker shade on hover */
+        }
