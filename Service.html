@@ -26,6 +26,67 @@ rel="stylesheet"
 <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.9.3/dist/umd/popper.min.js"></script>
 <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
 
+  <style>
+    body {
+            font-family: Arial, sans-serif;
+            background-color: #f4f4f4;
+            margin: 0;
+            padding: 0;
+        }
+
+        .Service-photo {
+            text-align: center;
+            padding: 50px 0;
+            position: relative;
+        }
+
+        .title {
+            color: black;
+            font-size: 45px;
+            margin-bottom: 20px;
+        }
+
+        .image-container {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            position: relative;
+        }
+
+        .left-photo, .right-photo {
+            width: 30%;
+            margin: 0 20px;
+            opacity: 0; /* Initially hidden */
+            transition: opacity 1s ease-in-out;
+        }
+
+        .arrow {
+            position: relative;
+            width: 50px;
+            height: 5px;
+            background-color: #007BFF; /* Arrow color */
+            margin: 0 10px;
+            opacity: 0; /* Initially hidden */
+            transition: opacity 1s ease-in-out;
+        }
+
+        .arrow:after {
+            content: '';
+            position: absolute;
+            top: -6.5px; /* Adjust to position the arrowhead */
+            left: 100%;
+            width: 0;
+            height: 0;
+            border-top: 10px solid transparent;
+            border-bottom: 10px solid transparent;
+            border-left: 10px solid #007BFF; /* Arrowhead color */
+        }
+
+        /* Optional: Add some hover effect to the arrow */
+        .arrow:hover {
+            background-color: #0056b3; /* Darker shade on hover */
+        }    
+  </style>
 </head>
 <body>
 
