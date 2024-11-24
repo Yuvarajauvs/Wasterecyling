@@ -565,6 +565,7 @@
   background-color: #074107; /* Heavy green light background */
   padding: 40px 20px;
   text-align: center;
+  height:auto;
 }
 
 .services-section h2 {
