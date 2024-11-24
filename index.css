@@ -598,16 +598,14 @@ flex-wrap: wrap;
 }
 
 .card img {
-  width: 100%;
-  height: 180px;
+  height: 600px; 
+  width:100%;
   object-fit: cover;
   transition: transform 0.6s ease-in-out; /* Smooth transition for zoom */
 }
 
 /* Zoom effect on hover */
-.card img:hover {
-  transform: scale(1.1); /* Zoom in slightly */
-}
+
 
 .card-body {
   padding: 20px;
