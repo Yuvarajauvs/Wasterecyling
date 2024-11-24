@@ -1,16 +1,21 @@
 <!DOCTYPE html>
-<!-- Coding By CodingNepal - www.codingnepalweb.com -->
 <html lang="en">
 <head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Card Slider HTML and CSS | CodingNepal</title>
-  <!-- Linking SwiperJS CSS -->
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Responsive Header</title>
+  <link    rel="stylesheet"  href="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/4.1.3/css/bootstrap.min.css" />
+  <link rel="stylesheet"   href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css" />
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css"/>
+
+  <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css"/>
+  <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
+  <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.9.3/dist/umd/popper.min.js"></script>
+  <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
   <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css">
   <link rel=" stylesheet" href="founders.css">
-    <link rel=" stylesheet" href="Header-footer.css">
 <style>
-   body {
+  body {
     margin: 0;
     overflow-x: hidden;
 }
@@ -31,107 +36,11 @@
       background-color: #f8f9fa;
       cursor: pointer;
     }
-  .header-dark {
-  position: fixed;
-  top: 0;
-  left: 0;
-  width: 100%;
-  background: rgba(255, 255, 255, 0.2); /* Semi-transparent background */
-  backdrop-filter: blur(10px); /* Adds blur to the background */
-  -webkit-backdrop-filter: blur(10px); /* For Safari */
-  z-index: 999;
-  border-bottom: 1px solid rgba(255, 255, 255, 0.3); /* Subtle border for separation */
-}
-
-/* Navbar Customizations */
-.header-dark .navbar {
-  padding: 0;
-  display: flex;
-  align-items: center;
-}
-
-.header-dark .navbar-brand {
-  margin-left: -145px; /* Logo to the left */
-  margin-top: -5px;
-  font-weight: bold;
-  color: black;
-}
-
-.header-dark .navbar-brand img {
-  width: 150px;
-  height: 60px;
-}
-
-.header-dark .navbar-brand:hover {
-  color: #208f8f;
-}
-
-.header-dark .navbar-nav {
-  margin-left: 250px; /* Adjust navigation links */
-  flex-direction: row;
-  justify-content: center;
-  width: auto;
-}
-
-.header-dark .nav-item {
-  margin: 0 15px;
-}
-
-.header-dark .nav-link {
-  color: black;
-  font-size: 16px;
-  text-decoration: none;
-}
-
-.header-dark .nav-link:hover {
-  color: #208f8f;
-}
-
-/* Search Bar Styling */
-.header-dark .form-inline {
-  margin-right: 40px; /* Search bar to the right */
-}
-
-.header-dark .form-inline .form-control {
-  border-radius: 20px;
-  border: 1px solid #ccc;
-  padding: 5px 15px;
-}
-
-/* Buy Button */
-.header-dark .buy-button {
-  background-color: green;
-  color: white;
-  border-radius: 20px;
-  padding: 10px 20px;
-  text-decoration: none;
-  font-size: 14px;
-}
-
-.header-dark .buy-button:hover {
-  background-color: darkgreen;
-}
-
-/* Responsive Design */
-@media (max-width: 768px) {
-  .header-dark .navbar-nav {
-    flex-direction: column;
-    text-align: center;
-    margin-left: 0;
-  }
-
-  .header-dark .form-inline {
-    margin: 10px 0;
-  }
-
-  .header-dark .buy-button {
-    margin: 10px auto;
-  }
-}
 </style>
 </head>
 <body>
-  <section class="header-dark">
+
+<section class="header-dark">
     <nav class="navbar navbar-expand-md">
       <div class="container">
         <!-- Logo -->
@@ -139,28 +48,36 @@
           <img src="logo.jpg" alt="Logo" style="width:140px;" />
         </a>
         <!-- Toggle Button -->
-        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+        <button
+          class="navbar-toggler"
+          type="button"
+          data-toggle="collapse"
+          data-target="#navbarNav"
+          aria-controls="navbarNav"
+          aria-expanded="false"
+          aria-label="Toggle navigation"
+        >
           <span class="navbar-toggler-icon"></span>
         </button>
         <!-- Navigation Links -->
         <div class="collapse navbar-collapse" id="navbarNav">
           <ul class="navbar-nav mx-auto">
             <li class="nav-item">
-              <a class="nav-link" href="index.html">Home</a>
+              <a class="nav-link" href="#">Home</a>
             </li>
             <!-- Services with Dropdown -->
-            <li class="nav-item dropdown">
-              <a class="nav-link dropdown-toggle" href="#" id="servicesDropdown" role="button" data-toggle="dropdown"  aria-haspopup="true" aria-expanded="false">
-                Service
+            <li class="nav-item dropdown" id="servicesDropdown">
+              <a class="nav-link -toggle" href="Service.html"  >
+                Services
               </a>
-              <div class="dropdown-menu" aria-labelledby="servicesDropdown">
+              <div class="dropdown-menu" aria-labelledby="servicesLink">
                 <a class="dropdown-item" href="web-development.html">Web Development</a>
                 <a class="dropdown-item" href="mobile-apps.html">Mobile Applications</a>
                 <a class="dropdown-item" href="cloud-solutions.html">Cloud Solutions</a>
               </div>
             </li>
             <li class="nav-item">
-              <a class="nav-link" href="#">Contact</a>
+              <a class="nav-link" href="#contact">Contact</a>
             </li>
             <li class="nav-item">
               <a class="nav-link" href="founders.html">About Us</a>
@@ -182,31 +99,34 @@
       </div>
     </nav>
   </section>
-  <section class="founder-con">
+
+<!--Body-->
+
+   <section class="founder-con">
   <div class="container swiper">
     <div class="slider-wrapper">
       <div class="card-list swiper-wrapper">
         <div class="card-item swiper-slide">
           <img src="name4.jpg" alt="User Image" class="user-image">
           <h2 class="user-name">Harshitha</h2>
-          <p class="user-profession">Founder</p>
+          <p class="user-profession">Software Developer</p>
         </div>
 
         <div class="card-item swiper-slide">
           <img src="name6.jpg" alt="User Image" class="user-image">
           <h2 class="user-name">Manikanta</h2>
-          <p class="user-profession">Co-Founder</p>
+          <p class="user-profession">Product Designer</p>
         </div>
 
         <div class="card-item swiper-slide">
           <img src="name5.jpg" alt="User Image" class="user-image">
-          <h2 class="user-name">Vishakha</h2>
+          <h2 class="user-name">Vishaksha</h2>
           <p class="user-profession">Graphic Designer</p>
         </div>
 
         <div class="card-item swiper-slide">
           <img src="name1.jpg" alt="User Image" class="user-image">
-          <h2 class="user-name">Soumyadip</h2>
+          <h2 class="user-name">Soumyadip/h2>
           <p class="user-profession">Project Manager</p>
         </div>
 
@@ -234,15 +154,26 @@
 
 
 
-  <!--Footer  -->
 
 
+
+
+
+
+
+
+
+
+
+
+    
+<!--Footer  -->
 <footer class="footer">
   <div class="footer-logo">
     <img src="logo.jpg" alt="Logo" style="width: 450px; height:200px;">
   </div>
   <div class="footer-section">
-    <h3>Explores</h3>
+    <h3>Explore</h3>
     <p>different Products</p>
     <p>customization</p>
    
@@ -258,7 +189,6 @@
     
   </div>
 </footer>
-  <!-- Linking SwiperJS script -->
   <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
 
   <!-- Linking custom script -->
