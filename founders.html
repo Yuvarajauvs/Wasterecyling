@@ -31,6 +31,103 @@
       background-color: #f8f9fa;
       cursor: pointer;
     }
+  .header-dark {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  background: rgba(255, 255, 255, 0.2); /* Semi-transparent background */
+  backdrop-filter: blur(10px); /* Adds blur to the background */
+  -webkit-backdrop-filter: blur(10px); /* For Safari */
+  z-index: 999;
+  border-bottom: 1px solid rgba(255, 255, 255, 0.3); /* Subtle border for separation */
+}
+
+/* Navbar Customizations */
+.header-dark .navbar {
+  padding: 0;
+  display: flex;
+  align-items: center;
+}
+
+.header-dark .navbar-brand {
+  margin-left: -145px; /* Logo to the left */
+  margin-top: -5px;
+  font-weight: bold;
+  color: black;
+}
+
+.header-dark .navbar-brand img {
+  width: 150px;
+  height: 60px;
+}
+
+.header-dark .navbar-brand:hover {
+  color: #208f8f;
+}
+
+.header-dark .navbar-nav {
+  margin-left: 250px; /* Adjust navigation links */
+  flex-direction: row;
+  justify-content: center;
+  width: auto;
+}
+
+.header-dark .nav-item {
+  margin: 0 15px;
+}
+
+.header-dark .nav-link {
+  color: black;
+  font-size: 16px;
+  text-decoration: none;
+}
+
+.header-dark .nav-link:hover {
+  color: #208f8f;
+}
+
+/* Search Bar Styling */
+.header-dark .form-inline {
+  margin-right: 40px; /* Search bar to the right */
+}
+
+.header-dark .form-inline .form-control {
+  border-radius: 20px;
+  border: 1px solid #ccc;
+  padding: 5px 15px;
+}
+
+/* Buy Button */
+.header-dark .buy-button {
+  background-color: green;
+  color: white;
+  border-radius: 20px;
+  padding: 10px 20px;
+  text-decoration: none;
+  font-size: 14px;
+}
+
+.header-dark .buy-button:hover {
+  background-color: darkgreen;
+}
+
+/* Responsive Design */
+@media (max-width: 768px) {
+  .header-dark .navbar-nav {
+    flex-direction: column;
+    text-align: center;
+    margin-left: 0;
+  }
+
+  .header-dark .form-inline {
+    margin: 10px 0;
+  }
+
+  .header-dark .buy-button {
+    margin: 10px auto;
+  }
+}
 </style>
 </head>
 <body>
