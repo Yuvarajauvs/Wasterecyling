@@ -8,8 +8,61 @@
   <!-- Linking SwiperJS CSS -->
   <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css">
   <link rel=" stylesheet" href="founders.css">
+    <link rel=" stylesheet" href="Header-footer.css">
+
 </head>
 <body>
+  <section class="header-dark">
+    <nav class="navbar navbar-expand-md">
+      <div class="container">
+        <!-- Logo -->
+        <a class="navbar-brand" href="#">
+          <img src="logo.jpg" alt="Logo" style="width:140px;" />
+        </a>
+        <!-- Toggle Button -->
+        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+          <span class="navbar-toggler-icon"></span>
+        </button>
+        <!-- Navigation Links -->
+        <div class="collapse navbar-collapse" id="navbarNav">
+          <ul class="navbar-nav mx-auto">
+            <li class="nav-item">
+              <a class="nav-link" href="index.html">Home</a>
+            </li>
+            <!-- Services with Dropdown -->
+            <li class="nav-item dropdown">
+              <a class="nav-link dropdown-toggle" href="#" id="servicesDropdown" role="button" data-toggle="dropdown"  aria-haspopup="true" aria-expanded="false">
+                Service
+              </a>
+              <div class="dropdown-menu" aria-labelledby="servicesDropdown">
+                <a class="dropdown-item" href="web-development.html">Web Development</a>
+                <a class="dropdown-item" href="mobile-apps.html">Mobile Applications</a>
+                <a class="dropdown-item" href="cloud-solutions.html">Cloud Solutions</a>
+              </div>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="#">Contact</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="founders.html">About Us</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="#">Blogs</a>
+            </li>
+          </ul>
+          <!-- Search Bar -->
+          <form class="form-inline">
+            <input
+              class="form-control"
+              type="search"
+              placeholder="Search"
+              aria-label="Search"
+            />
+          </form>
+        </div>
+      </div>
+    </nav>
+  </section>
   <section class="founder-con">
   <div class="container swiper">
     <div class="slider-wrapper">
@@ -59,6 +112,33 @@
     </div>
   </div>
 </section>
+
+
+
+  <!--Footer  -->
+
+
+<footer class="footer">
+  <div class="footer-logo">
+    <img src="logo.jpg" alt="Logo" style="width: 450px; height:200px;">
+  </div>
+  <div class="footer-section">
+    <h3>Explores</h3>
+    <p>different Products</p>
+    <p>customization</p>
+   
+  </div>
+  <div class="footer-section">
+    <h3>About</h3>
+    <p>Our Team</p>
+    <p>Careers</p>
+    <p>Contact Us</p>
+    <p>Company History</p>
+  </div>
+  <div class="footer-section">
+    
+  </div>
+</footer>
   <!-- Linking SwiperJS script -->
   <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
 
