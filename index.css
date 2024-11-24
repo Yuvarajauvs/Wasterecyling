@@ -455,9 +455,57 @@
 
 /*******************************************************************/
 
-/* About Founder */
+/* Contact */
 
+ .contact-link {
+            cursor: pointer;
+            text-decoration: underline;
+            color: white;
+        }
 
+        .content {
+            padding: 20px;
+            height: 800px; /* Just for demonstration to create scrollable content */
+            background-color: #f4f4f4;
+        }
+
+        .contact-section {
+            background-color: #fff;
+            padding: 20px;
+            margin: 20px auto;
+            width: 80%;
+            max-width: 600px;
+            border-radius: 8px;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+        }
+
+        .contact-section h2 {
+            margin-top: 0;
+        }
+        
+        .newsletter {
+            margin-top: 20px;
+        }
+
+        .newsletter input[type="email"] {
+            padding: 10px;
+            border: none;
+            border-radius: 4px;
+            width: 200px;
+        }
+
+        .newsletter button {
+            padding: 10px 15px;
+            background-color: #007BFF;
+            color: white;
+            border: none;
+            border-radius: 4px;
+            cursor: pointer;
+        }
+
+        .newsletter button:hover {
+            background-color: #0056b3;
+        }
   
 /* *************************************************************************************** / 
 
