@@ -97,59 +97,79 @@ rel="stylesheet"
        margin-top: 1px;
 
     }
-    
+  /* Reset and Basics */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: Arial, sans-serif;
+    background-color: #f9f9f9;
+}
+
+.container {
+    margin: 0 20px; /* 20px margin on left and right */
+    padding: 20px 0;
+}
+
+/* Row Styling */
 .row {
-  display: flex;
-  flex-wrap: wrap;
-  gap: 10px; /* Gap between columns */
-  margin-bottom: 30px;
-}
-
-/* Column Styling */
-.column {
-  flex: 1 15%; /* Adjusting width and making columns responsive */
-  padding: 10px;
-  margin-left:25px;
-  border-radius: 10px;
-  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
-}
-
-.column img {
-  width: auto;
-  border-radius: 10px;
-  transition: transform 0.3s ease;
-}
-
-/* Image Hover Effect */
-.column img:hover {
-  transform: scale(1.05);
+    margin-bottom: 40px; /* Space between rows */
 }
 
 /* Title Styling */
 .title {
-  font-size: 35px;
-  font-weight: bold;
-  color: #333;
-  text-align: center;
-  margin-bottom: 10px;
+    font-size: 28px; /* Increased font size */
+    font-weight: bold;
+    color: black; /* Black font color */
+    text-align: left; /* Align title to the left */
+    margin-bottom: 5px; /* Space below the title */
 }
 
-/* Horizontal line below title */
-.title + hr {
-  border: 1px solid #ddd;
-  width: 50%;
-  margin: 0 auto;
+/* Styled HR */
+.styled-hr {
+    margin: 0; /* Remove any default margin */
+    margin-bottom: 15px; /* Add custom spacing below the line */
+    height: 4px; /* Thickness of the line */
+    background-color: green; /* Solid green color */
+    border: none; /* Remove border */
+    width: 100%; /* Full width aligned with the container */
 }
 
-/* Optional Styling for Text Below Titles */
-.description {
-  font-size: 16px;
-  color: #666;
-  text-align: center;
+/* Images Container */
+.row-images {
+    display: flex; /* Horizontal alignment */
+    justify-content: flex-start; /* Align images to the left */
+    gap: 20px; /* Space between images */
 }
-    img{
-          object-fit: cover; /* Maintain proportions while filling the space */
+
+/* Images */
+.row-images img {
+    height: 150px; /* Consistent height */
+    width: auto; /* Preserve aspect ratio */
+    border-radius: 5px; /* Rounded corners */
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.2);
+    display: block; /* Prevent inline space */
+}
+
+img {
+    object-fit: cover; /* Maintain proportions while filling the space */
+}
+
+/* Responsive Design */
+@media (max-width: 768px) {
+    .row-images {
+        flex-wrap: wrap; /* Stack images on smaller screens */
     }
+
+    .row-images img {
+        height: auto; /* Adjust height proportionally */
+        max-width: 100%; /* Ensure images don't overflow */
+    }
+}
+
   </style>
 </head>
 <body>
@@ -236,55 +256,39 @@ rel="stylesheet"
 </div>
 
 
-  
-<h2>Back-Pack</h2>
+<div class="container">
+    <!-- Row 1 -->
+    <div class="row">
+        <h2 class="title">Purse</h2>
+        <hr class="styled-hr">
+        <div class="row-images">
+            <img src="packet1.jpg" alt="Fruits">
+            <img src="packet2.jpg" alt="Vegetables">
+            <img src="packet3.jpg" alt="Herbs">
+        </div>
+    </div>
 
-<div class="row"> 
-  <div class="column">
-    <img src="bag1.jpg" alt="Snow" style="width:35%;border-radius: 10px 10px 10px 10px;height: 100%;">
-  </div>
-  <div class="column">
-    <img src="bag2.jpg" alt="Forest" style="width:35%; border-radius: 10px;height: 100%;">
-  </div>
-  <div class="column">
-    <img src="bag3.jpg" alt="Mountains" style="width:35%;height: 100%;">
-  </div>
+    <!-- Row 2 -->
+    <div class="row">
+        <h2 class="title">Back-Pack</h2>
+        <hr class="styled-hr">
+        <div class="row-images">
+            <img src="bag1.jpg" alt="Backpack">
+            <img src="bag2.jpg" alt="Suitcase">
+            <img src="bag3.jpg" alt="Travel Pouch">
+        </div>
+    </div>
+
+    <!-- Row 3 -->
+    <div class="row">
+        <h2 class="title">Bottles</h2>
+        <hr class="styled-hr">
+        <div class="row-images">
+            <img src="bottle1.jpg" alt="Water Bottle">
+            <img src="bottle2.jpg" alt="Thermos">
+        </div>
+    </div>
 </div>
-
-<hr>
-<h2>Purse</h2>
-
-
-<div class="row"> 
- 
-  <div class="column">
-    <img src="packet1.jpg" alt="Forest" style="width:35%; border-radius: 10px;">
-  </div>
-  <div class="column">
-    <img src="packet2.jpg" alt="Mountains" style="width:35%">
-  </div>
-  <div class="column">
-    <img src="packet3.jpg" alt="Mountains" style="width:35%">
-  </div>
- 
-</div>
-<hr>
-<h2>Bottles</h2>
-
-
-<div class="row"> 
-  <div class="column">
-    <img src="bottle1.jpg" alt="Snow" style="width:35%;border-radius: 10px 10px 10px 10px;">
-  </div>
-  <div class="column">
-    <img src="bottle2.jpg" alt="Forest" style="width:35%; border-radius: 10px;">
-  </div>
-  <div class="column">
-    <img src="bottle3.jpg" alt="Mountains" style="width:35%">
-  </div>
-  
-</div>
-<hr>
 
   
 <br><br>
