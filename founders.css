@@ -25,6 +25,7 @@ body {
 .header-dark {
   position: fixed;
   top: 0;
+  height: 9%;
   left: 0;
   width: 100%;
   background: rgba(255, 255, 255, 0.2); /* Semi-transparent background */
@@ -65,7 +66,7 @@ body {
 }
 
 .header-dark .nav-item {
-  margin: 0 15px;
+  margin: 10px 28px;
 }
 
 .header-dark .nav-link {
